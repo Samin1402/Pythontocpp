@@ -1,13 +1,13 @@
 #include <iostream>
 #include <string>
 #include <thread>
-// #include <sys/socket.h>
-// #include <sys/un.h>
-// #include <unistd.h>
-// #include <cstring>
+#include <sys/socket.h>
+#include <sys/un.h>
+#include <unistd.h>
+#include <cstring>
 
 static const char* SOCKET_PATH = "/var/run/codesysextension/extfuncs/myExternalFunction.sock";
-// static const unsigned int BUFFER_SIZE = 1024;
+static const unsigned int BUFFER_SIZE = 1024;
 
 class ExternalFunctionBase {
 protected:
